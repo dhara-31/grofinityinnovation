@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Write to GrofInityInnovation about a web app, mobile product, or SaaS build.">
+  <title>Contact Us | GrofInityInnovation</title>
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('grofinity-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="glow-blob glow-blob-1"></div>
+  <div class="glow-blob glow-blob-2"></div>
+  <div class="glow-blob glow-blob-3"></div>
+
+  <!-- Header Section -->
+  <header class="header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo" id="logo-link">
+        <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF7A00" />
+              <stop offset="50%" stop-color="#FF2D55" />
+              <stop offset="100%" stop-color="#2563EB" />
+            </linearGradient>
+          </defs>
+          <line x1="6" y1="30" x2="30" y2="30" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+          <line x1="6" y1="30" x2="6" y2="6" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M6 30 L18 18 L24 22 L32 8" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M26 8 H32 V14" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span>GrofInityInnovation</span>
+      </a>
+
+      <!-- Navigation Links & Theme Controls -->
+      <div class="nav-group">
+        <nav>
+          <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+            <li><a href="products.html" class="nav-link" id="nav-products">Products</a></li>
+            <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+            <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Light / Dark Mode Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Nav Hamburger -->
+        <button class="mobile-nav-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Header -->
+    <section class="section about-hero" style="padding-bottom: 2.5rem;">
+      <div class="container">
+        <span class="section-tag">WRITE TO US</span>
+        <h1>Tell Us What You Want to Build</h1>
+        <p>Have a web portal or mobile app in mind? Share the idea, who it serves, and where the system should start
+          and stop.</p>
+      </div>
+    </section>
+
+    <!-- Contact Info Cards & Form Section -->
+    <section class="section" id="contact-details" style="padding-top: 0;">
+      <div class="container contact-layout">
+
+        <!-- Info column -->
+        <div class="contact-info">
+
+          <!-- Card 1: Email -->
+          <div class="contact-card">
+            <div class="contact-card-icon">✉</div>
+            <div class="contact-card-content">
+              <h3>Email</h3>
+              <a href="mailto:grofinityinnovation@gmail.com">grofinityinnovation@gmail.com</a>
+              <p style="font-size: 0.85rem; margin-top: 0.25rem;">Most product questions get a reply within 12 hours.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Hours -->
+          <div class="contact-card">
+            <div class="contact-card-icon">⏱</div>
+            <div class="contact-card-content">
+              <h3>Office Hours</h3>
+              <p style="color: var(--text-primary); font-weight: 600;">Monday &ndash; Friday</p>
+              <p>9:00 AM &ndash; 6:00 PM (GMT +5:30)</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Focus Reminder -->
+          <div class="contact-card">
+            <div class="contact-card-icon" style="color: var(--accent);">✓</div>
+            <div class="contact-card-content">
+              <h3>What We Take On</h3>
+              <p>We only build custom software, backend services, state-heavy systems, and interactive mobile apps.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-container">
+
+          <!-- Success overlay (revealed on valid submit) -->
+          <div class="form-success-overlay">
+            <div class="success-icon">✓</div>
+            <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">We got your note</h2>
+            <p style="font-size: 0.95rem; margin-bottom: 2rem; max-width: 320px; margin-left: auto; margin-right: auto;">
+              Thanks. GrofInityInnovation will read your brief and write back by email.
+            </p>
+            <button class="btn btn-primary" id="success-reset-btn">Send Another Message</button>
+          </div>
+
+          <!-- Input form -->
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Your full name" required>
+              <span class="form-feedback"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="you@company.com" required>
+              <span class="form-feedback"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-project-type" class="form-label">Project Category</label>
+              <select id="contact-project-type" class="form-control" required>
+                <option value="" disabled selected>Select an option...</option>
+                <option value="mobile">Mobile Application (iOS/Android)</option>
+                <option value="web">Web Application / SaaS Portal</option>
+                <option value="multiplatform">Multiplatform Product Suite</option>
+                <option value="other">Other Software Architecture</option>
+              </select>
+              <span class="form-feedback"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Project Description</label>
+              <textarea id="contact-message" class="form-control"
+                placeholder="Share the product idea, who will use it, and what you want in the first version..." required></textarea>
+              <span class="form-feedback"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 10px;">Send Message</button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-logo-col">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <line x1="6" y1="30" x2="30" y2="30" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="6" y1="30" x2="6" y2="6" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M6 30 L18 18 L24 22 L32 8" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M26 8 H32 V14" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span>GrofInityInnovation</span>
+        </a>
+        <p>
+          Product engineers and software architects who ship modern mobile and web systems.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="products.html" class="footer-link">Products</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:grofinityinnovation@gmail.com" class="footer-link">grofinityinnovation@gmail.com</a></li>
+          <li class="footer-link" style="color: var(--text-muted);">Monday &ndash; Friday: 9:00 AM &ndash; 6:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 GrofInityInnovation. All rights reserved.</p>
+      <p>Careful engineering, every release.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

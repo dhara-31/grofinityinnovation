@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Browse mobile apps, cloud portals, and SaaS work from GrofInityInnovation. We make software people can actually run.">
+  <title>Our Products | GrofInityInnovation</title>
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('grofinity-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="glow-blob glow-blob-1"></div>
+  <div class="glow-blob glow-blob-2"></div>
+  <div class="glow-blob glow-blob-3"></div>
+
+  <!-- Header Section -->
+  <header class="header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo" id="logo-link">
+        <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF7A00" />
+              <stop offset="50%" stop-color="#FF2D55" />
+              <stop offset="100%" stop-color="#2563EB" />
+            </linearGradient>
+          </defs>
+          <line x1="6" y1="30" x2="30" y2="30" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+          <line x1="6" y1="30" x2="6" y2="6" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M6 30 L18 18 L24 22 L32 8" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M26 8 H32 V14" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span>GrofInityInnovation</span>
+      </a>
+
+      <!-- Navigation Links & Theme Controls -->
+      <div class="nav-group">
+        <nav>
+          <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+            <li><a href="products.html" class="nav-link" id="nav-products">Products</a></li>
+            <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+            <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Light / Dark Mode Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Nav Hamburger -->
+        <button class="mobile-nav-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Hero Section -->
+    <section class="section about-hero">
+      <div class="container">
+        <span class="section-tag">WHAT WE SHIP</span>
+        <h1>Software We Build</h1>
+        <p>Mobile apps and cloud SaaS, planned and coded from a blank page rather than a ready-made kit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Catalog Showcase with interactive category filter -->
+    <section class="section" id="products-catalog" style="padding-top: 0;">
+      <div class="container">
+
+        <!-- Filter Controls -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+        </div>
+
+        <!-- Product Bento Cards Grid -->
+        <div class="products-bento-grid">
+
+          <!-- Product 1: Field & Team Apps -->
+          <div class="product-bento-card" data-category="mobile">
+            <div class="product-bento-preview">
+              <div class="phone-mockup">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div>
+                    <div class="phone-circle"></div>
+                    <div class="phone-pill"></div>
+                    <div class="phone-pill short"></div>
+                  </div>
+                  <div class="phone-card">
+                    <div class="phone-pill xs" style="background: var(--primary);"></div>
+                    <div class="phone-pill short"></div>
+                  </div>
+                  <div class="phone-bottom-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product-bento-body">
+              <span class="product-badge mobile">Mobile App</span>
+              <h3>Field &amp; Team Apps</h3>
+              <p>
+                Apps for people who work on site, not only at a desk. Data saves on the device first, tasks stay on
+                shared boards, and alerts keep status in sync even on a weak network.
+              </p>
+              <ul class="feature-tags">
+                <li>React Native</li>
+                <li>SQLite</li>
+                <li>Node.js</li>
+                <li>WebSockets</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Product 2: Operations Dashboards -->
+          <div class="product-bento-card" data-category="web">
+            <div class="product-bento-preview">
+              <div class="browser-mockup">
+                <div class="browser-bar">
+                  <div class="browser-dot"></div>
+                  <div class="browser-dot"></div>
+                  <div class="browser-dot"></div>
+                  <div class="browser-address"></div>
+                </div>
+                <div class="browser-screen">
+                  <div class="browser-sidebar">
+                    <div class="browser-line active"></div>
+                    <div class="browser-line"></div>
+                    <div class="browser-line"></div>
+                  </div>
+                  <div class="browser-chart">
+                    <div class="browser-chart-bars">
+                      <div class="browser-chart-bar" style="height: 40%;"></div>
+                      <div class="browser-chart-bar" style="height: 75%;"></div>
+                      <div class="browser-chart-bar" style="height: 50%;"></div>
+                      <div class="browser-chart-bar" style="height: 90%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-bento-body">
+              <span class="product-badge web">Web App</span>
+              <h3>Operations Dashboards</h3>
+              <p>
+                One web portal for server health, database load, and business numbers. Charts stay snappy, views can
+                be saved, and ops plus leadership only see what they should.
+              </p>
+              <ul class="feature-tags">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>Rust Core</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Product 3: Secure Access Apps -->
+          <div class="product-bento-card" data-category="mobile">
+            <div class="product-bento-preview">
+              <div class="phone-mockup">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div>
+                    <div class="phone-circle" style="background: var(--secondary);"></div>
+                    <div class="phone-pill" style="background: var(--secondary);"></div>
+                    <div class="phone-pill short"></div>
+                  </div>
+                  <div style="text-align: center; color: var(--secondary); font-size: 1.5rem; margin-top: 15px;">🔒</div>
+                  <div class="phone-bottom-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product-bento-body">
+              <span class="product-badge mobile">Mobile App</span>
+              <h3>Secure Access Apps</h3>
+              <p>
+                Phone apps for sign-in, vaults, and private records. Face or fingerprint unlock, encrypted files, and
+                narrow permissions so staff open only what they need.
+              </p>
+              <ul class="feature-tags">
+                <li>Swift</li>
+                <li>Kotlin</li>
+                <li>WebAssembly</li>
+                <li>gRPC</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Product 4: Cloud Performance Suites -->
+          <div class="product-bento-card" data-category="web">
+            <div class="product-bento-preview">
+              <div class="browser-mockup">
+                <div class="browser-bar">
+                  <div class="browser-dot"></div>
+                  <div class="browser-dot"></div>
+                  <div class="browser-dot"></div>
+                  <div class="browser-address"></div>
+                </div>
+                <div class="browser-screen">
+                  <div class="browser-sidebar">
+                    <div class="browser-line" style="background: var(--accent); width: 70%;"></div>
+                    <div class="browser-line"></div>
+                    <div class="browser-line"></div>
+                  </div>
+                  <div class="browser-chart">
+                    <div
+                      style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--accent); margin: auto; animation: pulse 2.2s infinite;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-bento-body">
+              <span class="product-badge web">Web App</span>
+              <h3>Cloud Performance Suites</h3>
+              <p>
+                Live watch screens for slow APIs, failed jobs, and traffic jumps. Made for SaaS teams on cloud
+                functions who want a map of the system, not a pile of raw logs.
+              </p>
+              <ul class="feature-tags">
+                <li>Next.js</li>
+                <li>Go Core</li>
+                <li>AWS Lambda</li>
+                <li>ClickHouse</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-logo-col">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <line x1="6" y1="30" x2="30" y2="30" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="6" y1="30" x2="6" y2="6" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M6 30 L18 18 L24 22 L32 8" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M26 8 H32 V14" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span>GrofInityInnovation</span>
+        </a>
+        <p>
+          Product engineers and software architects who ship modern mobile and web systems.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="products.html" class="footer-link">Products</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:grofinityinnovation@gmail.com" class="footer-link">grofinityinnovation@gmail.com</a></li>
+          <li class="footer-link" style="color: var(--text-muted);">Monday &ndash; Friday: 9:00 AM &ndash; 6:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 GrofInityInnovation. All rights reserved.</p>
+      <p>Careful engineering, every release.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
